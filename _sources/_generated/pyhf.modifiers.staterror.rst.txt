@@ -1,0 +1,33 @@
+pyhf.modifiers.staterror
+========================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: staterror
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: staterror.is_constrained
+   .. autoattribute:: staterror.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: staterror.__init__
+   .. automethod:: staterror.add_sample
+   .. automethod:: staterror.alphas
+   .. automethod:: staterror.apply
+   .. automethod:: staterror.expected_data
+   .. automethod:: staterror.pdf
+   
+   

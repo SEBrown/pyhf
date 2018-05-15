@@ -1,0 +1,29 @@
+pyhf.modelconfig
+================
+
+.. currentmodule:: pyhf
+
+.. autoclass:: modelconfig
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~modelconfig.__init__
+      ~modelconfig.add_or_get_modifier
+      ~modelconfig.from_spec
+      ~modelconfig.modifier
+      ~modelconfig.par_slice
+      ~modelconfig.set_poi
+      ~modelconfig.suggested_bounds
+      ~modelconfig.suggested_init
+   
+   
+
+   
+   
+   

@@ -1,0 +1,17 @@
+pyhf.exceptions.InvalidModifier
+===============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoclass:: InvalidModifier
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   

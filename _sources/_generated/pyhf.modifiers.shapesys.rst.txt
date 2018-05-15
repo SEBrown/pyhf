@@ -1,0 +1,33 @@
+pyhf.modifiers.shapesys
+=======================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: shapesys
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: shapesys.is_constrained
+   .. autoattribute:: shapesys.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: shapesys.__init__
+   .. automethod:: shapesys.add_sample
+   .. automethod:: shapesys.alphas
+   .. automethod:: shapesys.apply
+   .. automethod:: shapesys.expected_data
+   .. automethod:: shapesys.pdf
+   
+   

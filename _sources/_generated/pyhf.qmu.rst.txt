@@ -1,0 +1,6 @@
+pyhf.qmu
+========
+
+.. currentmodule:: pyhf
+
+.. autofunction:: qmu

@@ -1,0 +1,17 @@
+pyhf.exceptions.InvalidInterpCode
+=================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoclass:: InvalidInterpCode
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   

@@ -1,0 +1,30 @@
+pyhf.modifiers.normfactor
+=========================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: normfactor
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: normfactor.is_constrained
+   .. autoattribute:: normfactor.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: normfactor.__init__
+   .. automethod:: normfactor.add_sample
+   .. automethod:: normfactor.apply
+   
+   

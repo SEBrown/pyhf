@@ -1,0 +1,30 @@
+pyhf.modifiers.shapefactor
+==========================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: shapefactor
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: shapefactor.is_constrained
+   .. autoattribute:: shapefactor.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: shapefactor.__init__
+   .. automethod:: shapefactor.add_sample
+   .. automethod:: shapefactor.apply
+   
+   

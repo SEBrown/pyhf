@@ -1,0 +1,6 @@
+pyhf.runOnePoint
+================
+
+.. currentmodule:: pyhf
+
+.. autofunction:: runOnePoint

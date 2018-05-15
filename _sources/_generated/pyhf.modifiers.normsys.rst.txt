@@ -1,0 +1,33 @@
+pyhf.modifiers.normsys
+======================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: normsys
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: normsys.is_constrained
+   .. autoattribute:: normsys.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: normsys.__init__
+   .. automethod:: normsys.add_sample
+   .. automethod:: normsys.alphas
+   .. automethod:: normsys.apply
+   .. automethod:: normsys.expected_data
+   .. automethod:: normsys.pdf
+   
+   

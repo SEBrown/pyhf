@@ -1,0 +1,29 @@
+pyhf.hfpdf
+==========
+
+.. currentmodule:: pyhf
+
+.. autoclass:: hfpdf
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~hfpdf.__init__
+      ~hfpdf.constraint_logpdf
+      ~hfpdf.expected_actualdata
+      ~hfpdf.expected_auxdata
+      ~hfpdf.expected_data
+      ~hfpdf.expected_sample
+      ~hfpdf.logpdf
+      ~hfpdf.pdf
+   
+   
+
+   
+   
+   

@@ -1,0 +1,41 @@
+pyhf.tensor.tensorflow\_backend
+===============================
+
+.. currentmodule:: pyhf.tensor
+
+.. autoclass:: tensorflow_backend
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: tensorflow_backend.__init__
+   .. automethod:: tensorflow_backend.astensor
+   .. automethod:: tensorflow_backend.clip
+   .. automethod:: tensorflow_backend.concatenate
+   .. automethod:: tensorflow_backend.divide
+   .. automethod:: tensorflow_backend.exp
+   .. automethod:: tensorflow_backend.log
+   .. automethod:: tensorflow_backend.normal
+   .. automethod:: tensorflow_backend.normal_cdf
+   .. automethod:: tensorflow_backend.ones
+   .. automethod:: tensorflow_backend.outer
+   .. automethod:: tensorflow_backend.poisson
+   .. automethod:: tensorflow_backend.power
+   .. automethod:: tensorflow_backend.product
+   .. automethod:: tensorflow_backend.simple_broadcast
+   .. automethod:: tensorflow_backend.sqrt
+   .. automethod:: tensorflow_backend.stack
+   .. automethod:: tensorflow_backend.sum
+   .. automethod:: tensorflow_backend.tolist
+   .. automethod:: tensorflow_backend.where
+   
+   

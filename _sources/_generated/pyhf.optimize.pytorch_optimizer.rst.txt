@@ -1,0 +1,24 @@
+pyhf.optimize.pytorch\_optimizer
+================================
+
+.. currentmodule:: pyhf.optimize
+
+.. autoclass:: pytorch_optimizer
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: pytorch_optimizer.__init__
+   .. automethod:: pytorch_optimizer.constrained_bestfit
+   .. automethod:: pytorch_optimizer.unconstrained_bestfit
+   
+   

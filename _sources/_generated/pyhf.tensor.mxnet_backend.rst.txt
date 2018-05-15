@@ -1,0 +1,42 @@
+pyhf.tensor.mxnet\_backend
+==========================
+
+.. currentmodule:: pyhf.tensor
+
+.. autoclass:: mxnet_backend
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: mxnet_backend.__init__
+   .. automethod:: mxnet_backend.astensor
+   .. automethod:: mxnet_backend.clip
+   .. automethod:: mxnet_backend.concatenate
+   .. automethod:: mxnet_backend.divide
+   .. automethod:: mxnet_backend.exp
+   .. automethod:: mxnet_backend.log
+   .. automethod:: mxnet_backend.normal
+   .. automethod:: mxnet_backend.normal_cdf
+   .. automethod:: mxnet_backend.ones
+   .. automethod:: mxnet_backend.outer
+   .. automethod:: mxnet_backend.poisson
+   .. automethod:: mxnet_backend.power
+   .. automethod:: mxnet_backend.product
+   .. automethod:: mxnet_backend.simple_broadcast
+   .. automethod:: mxnet_backend.sqrt
+   .. automethod:: mxnet_backend.stack
+   .. automethod:: mxnet_backend.sum
+   .. automethod:: mxnet_backend.tolist
+   .. automethod:: mxnet_backend.where
+   .. automethod:: mxnet_backend.zeros
+   
+   

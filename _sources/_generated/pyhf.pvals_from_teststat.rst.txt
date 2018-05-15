@@ -1,0 +1,6 @@
+pyhf.pvals\_from\_teststat
+==========================
+
+.. currentmodule:: pyhf
+
+.. autofunction:: pvals_from_teststat

@@ -1,0 +1,131 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# HistoSys with PyTorch"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%pylab inline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pyhf\n",
+    "from pyhf import hfpdf\n",
+    "from pyhf.simplemodels import hepdata_like"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " [120.0, 180.0, 100.0, 225.0]\n",
+      "[[0, 10], [0, 10], [0, 10]]\n",
+      "['mu', 'uncorr_bkguncrt']\n",
+      "---\n",
+      "as numpy\n",
+      "-----\n",
+      "<type 'numpy.ndarray'> [-22.87785012]\n",
+      "---\n",
+      "as pytorch\n",
+      "-----\n",
+      "<class 'torch.autograd.variable.Variable'> Variable containing:\n",
+      "-22.8778\n",
+      "[torch.FloatTensor of size 1]\n",
+      "\n",
+      "---\n",
+      "as tensorflow\n",
+      "-----\n",
+      "<class 'tensorflow.python.framework.ops.Tensor'> [-22.877851486206055]\n"
+     ]
+    }
+   ],
+   "source": [
+    "source = {\n",
+    "  \"binning\": [2,-0.5,1.5],\n",
+    "  \"bindata\": {\n",
+    "    \"data\":    [120.0, 180.0],\n",
+    "    \"bkg\":     [100.0, 150.0],\n",
+    "    \"bkgerr\":     [10.0, 10.0],\n",
+    "    \"sig\":     [30.0, 95.0]\n",
+    "  }\n",
+    "}\n",
+    "\n",
+    "pdf  = hepdata_like(source['bindata']['sig'], source['bindata']['bkg'], source['bindata']['bkgerr'])\n",
+    "data = source['bindata']['data'] + pdf.config.auxdata\n",
+    "\n",
+    "init_pars = pdf.config.suggested_init()\n",
+    "par_bounds = pdf.config.suggested_bounds()\n",
+    "\n",
+    "print(data)\n",
+    "print(par_bounds)\n",
+    "print(pdf.config.par_order)\n",
+    "\n",
+    "\n",
+    "print '---\\nas numpy\\n-----'\n",
+    "pyhf.tensorlib = pyhf.numpy_backend(poisson_from_normal = True)\n",
+    "v =  pdf.logpdf(init_pars,data)\n",
+    "print type(v),v\n",
+    "\n",
+    "print '---\\nas pytorch\\n-----'\n",
+    "pyhf.tensorlib = pyhf.pytorch_backend()\n",
+    "v =  pdf.logpdf(init_pars,data)\n",
+    "print type(v),v\n",
+    "\n",
+    "\n",
+    "print '---\\nas tensorflow\\n-----'\n",
+    "import tensorflow as tf\n",
+    "pyhf.tensorlib = pyhf.tensorflow_backend()\n",
+    "v =  pdf.logpdf(init_pars,data)\n",
+    "\n",
+    "pyhf.tensorlib.session = tf.Session()\n",
+    "print type(v),pyhf.tensorlib.tolist(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

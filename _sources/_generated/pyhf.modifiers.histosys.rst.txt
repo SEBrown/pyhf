@@ -1,0 +1,33 @@
+pyhf.modifiers.histosys
+=======================
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: histosys
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: histosys.is_constrained
+   .. autoattribute:: histosys.is_shared
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: histosys.__init__
+   .. automethod:: histosys.add_sample
+   .. automethod:: histosys.alphas
+   .. automethod:: histosys.apply
+   .. automethod:: histosys.expected_data
+   .. automethod:: histosys.pdf
+   
+   

@@ -1,0 +1,24 @@
+pyhf.optimize.tflow\_optimizer
+==============================
+
+.. currentmodule:: pyhf.optimize
+
+.. autoclass:: tflow_optimizer
+   :members:
+   :inherited-members:
+   :show-inheritance:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   
+   .. automethod:: tflow_optimizer.__init__
+   .. automethod:: tflow_optimizer.constrained_bestfit
+   .. automethod:: tflow_optimizer.unconstrained_bestfit
+   
+   
